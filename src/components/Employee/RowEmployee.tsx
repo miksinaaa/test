@@ -42,7 +42,7 @@ const RowEmployee: FC<IRowEmployee> = ({
       name: employee.name,
       post: employee.post,
     });
-  }, []);
+  }, [employee]);
 
   const editOne = () => {
     setStatus(!status);

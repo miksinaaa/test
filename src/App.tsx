@@ -27,6 +27,8 @@ const App = () => {
   //   return () => window.removeEventListener("scroll", handleScroll);
   // }, [hasMore]); // Запускаем эффект при изменении флага hasMore
 
+  console.log(companies);
+
   return (
     <div className={s.wrapper}>
       <div className={s.left}>

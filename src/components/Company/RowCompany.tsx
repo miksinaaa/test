@@ -23,7 +23,7 @@ const RowCompany: FC<IRowCompany> = ({
 
   useEffect(() => {
     setData({ name: company.name, address: company.address });
-  }, []);
+  }, [company]);
 
   const deleteOne = (id: number) => {
     deleteCompany(id);
@@ -36,7 +36,8 @@ const RowCompany: FC<IRowCompany> = ({
 
   const editOne = () => {
     setStatus(!status);
-    status && editCompany({ id: company.id, name: data.name, address: data.address });
+    status &&
+      editCompany({ id: company.id, name: data.name, address: data.address });
   };
 
   const checkCompany = (id: number) => {

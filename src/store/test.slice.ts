@@ -146,5 +146,4 @@ export const { addEmployee } = slice.actions;
 
 export const { editCompany } = slice.actions;
 
-
 export const { editEmployee } = slice.actions;
