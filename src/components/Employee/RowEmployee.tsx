@@ -46,13 +46,14 @@ const RowEmployee: FC<IRowEmployee> = ({
 
   const editOne = () => {
     setStatus(!status);
-    editEmployee({
-      idCompany: companyId,
-      idEmployee: employee.id,
-      surname: data.surname,
-      name: data.name,
-      post: data.post,
-    });
+    status &&
+      editEmployee({
+        idCompany: companyId,
+        idEmployee: employee.id,
+        surname: data.surname,
+        name: data.name,
+        post: data.post,
+      });
   };
 
   const deleteOne = (idCompany: number, idEmployee: number) => {

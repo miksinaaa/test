@@ -36,7 +36,7 @@ const RowCompany: FC<IRowCompany> = ({
 
   const editOne = () => {
     setStatus(!status);
-    editCompany({ id: company.id, name: data.name, address: data.address });
+    status && editCompany({ id: company.id, name: data.name, address: data.address });
   };
 
   const checkCompany = (id: number) => {
